@@ -18,6 +18,8 @@ macOS 12 or later, an Apple Silicon or Intel Mac, and an audio host supporting V
 
 ## Install
 
+Read [README FIRST BEFORE INSTALLATION](<README FIRST BEFORE INSTALLATION.txt>) before running the installer.
+
 1. Save your work and quit your audio hosts.
 2. Download `Aerium-1.1.1-macOS.pkg` from the release linked above. Compare its SHA-256 with the release's `SHA256SUMS.txt`.
 3. Open the installer. Use **Customise** to select VST3, Audio Unit, or both. At least one format is required.
@@ -54,7 +56,9 @@ The selected plugin formats determine which plugin bundle is installed. Factory 
 - `.tps` stores a complete Aerium preset.
 - `.tpseq` stores an EQ correction/profile. Loading it into Acoustic Response changes the EQ, not unrelated effects.
 - Existing beta installations and their separate user data are not migrated or removed automatically.
-- If folder preparation fails, check free space and the host's Documents access in macOS Privacy & Security, then reopen the plugin. Aerium does not silently switch to another data folder.
+- The installer was updated on 21 November 2026 to correct unreadable shared factory-resource metadata that could cause “Aerium could not prepare Documents/Aerium.” If affected, close audio hosts and reinstall the current package; preserve your existing Documents/Aerium folder. The audio binaries and factory-content bytes are unchanged.
+- If folder preparation still fails after the updated installer, check free space and the host's Documents access in macOS Privacy & Security. Aerium does not silently switch to another data folder.
+- Release attachments labelled `superseded` are rollback archives of the earlier installer and checksum. Use `Aerium-1.1.1-macOS.pkg` and `SHA256SUMS.txt` for the correction.
 
 ## Factory presets
 
@@ -66,4 +70,4 @@ Bundled resources retain their own licence terms. See the included IR licence no
 
 ## Validation scope
 
-The build was checked using offline VST3/AU hosts on Apple Silicon natively and under Rosetta, including factory-state/audio comparisons. These checks do not replace testing in your DAW, physical Intel hardware, or every supported macOS version. No Windows installer is included in this macOS release.
+The build was checked using offline VST3/AU hosts on Apple Silicon natively and under Rosetta, including factory-state/audio comparisons. These checks do not replace testing in your DAW, physical Intel hardware, or every supported macOS version. For the Documents repair, fresh/repeated provisioning passed on arm64 and x86_64/Rosetta, and existing installed AU/VST3 loading was checked in Ableton. Privileged reinstallation and fresh-setup confirmation in Ableton/GarageBand on the affected Mac remain pending. No Windows installer is included in this macOS release.
