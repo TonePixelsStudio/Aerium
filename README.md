@@ -58,7 +58,7 @@ The selected plugin formats determine which plugin bundle is installed. Factory 
 - Existing beta installations and their separate user data are not migrated or removed automatically.
 - The installer was updated on 21 November 2026 to correct unreadable shared factory-resource metadata that could cause “Aerium could not prepare Documents/Aerium.” If affected, close audio hosts and reinstall the current package; preserve your existing Documents/Aerium folder. The audio binaries and factory-content bytes are unchanged.
 - If folder preparation still fails after the updated installer, check free space and the host's Documents access in macOS Privacy & Security. Aerium does not silently switch to another data folder.
-- Release attachments labelled `superseded` are rollback archives of the earlier installer and checksum. Use `Aerium-1.1.1-macOS.pkg` and `SHA256SUMS.txt` for the correction.
+- The superseded installer and checksum have been removed from the GitHub release. Use `Aerium-1.1.1-macOS.pkg` and `SHA256SUMS.txt` for the correction.
 
 ## Factory presets
 
