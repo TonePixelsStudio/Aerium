@@ -2,46 +2,45 @@
 
 Aerium is a free acoustic-guitar tone-shaping plugin with microphone IR processing, Acoustic Tone Match, EQ and studio effects.
 
-## Aerium 1.1.1 for macOS
+## Aerium 1.1.1 — macOS beta
 
-- Universal Apple Silicon (`arm64`) and Intel (`x86_64`) plugin binaries.
-- VST3 and Audio Unit formats; choose either or both in the installer.
-- Original approved DSP, microphone IR library and four factory presets: **Default**, **Dry Default**, **Ambient Dream** and **Martin**.
-- The revised user manual and factory content use **Documents/Aerium**.
-- No experimental synthetic replacement IRs are included.
+**Beta software for testing.** Bugs, compatibility problems or crashes may occur. Save your DAW projects regularly.
 
-[Download Aerium 1.1.1 for macOS](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-1.1.1-macOS.pkg) · [Release notes](https://github.com/TonePixelsStudio/Aerium/releases/tag/v1.1.1) · [User manual](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-User-Manual.pdf)
+- Universal Apple Silicon and Intel VST3 and Audio Unit plugins.
+- VST3, AU or both in the installer; both are selected by default.
+- The original 83 factory IR WAVs and four presets: Default, Dry Default, Ambient Dream and Martin.
+- Approved audio processing and plugin identities retained.
+- Factory presets and IRs load from Application Support independently of optional Documents setup.
 
-## Requirements
+[Download macOS installer](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-1.1.1-macOS.pkg) · [Read the illustrated beta installation guide](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/README-FIRST-BEFORE-INSTALLATION.pdf) · [User manual](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-User-Manual.pdf) · [Checksums](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/SHA256SUMS.txt)
 
-macOS 12 or later, an Apple Silicon or Intel Mac, and an audio host supporting VST3 or Audio Units. Administrator approval is required to install into the system plugin folders. Actual support also depends on your host and macOS version.
+## Requirements and installation
 
-## Install
+macOS 12 or later, an Apple Silicon or Intel Mac, and a compatible VST3/AU host. Your DAW may require a newer macOS version. No Windows installer is included.
 
-Read [README FIRST BEFORE INSTALLATION](<README FIRST BEFORE INSTALLATION.txt>) before running the installer.
+1. Read the illustrated guide, save your work and close your audio hosts.
+2. Download `Aerium-1.1.1-macOS.pkg` and compare its SHA-256 with `SHA256SUMS.txt`.
+3. Open the installer and choose VST3, Audio Unit, or both under Customise. Complete the normal administrator authentication.
+4. Reopen your DAW and load **Aerium**. Use VST3 in Ableton Live or AU in Logic Pro/GarageBand. Rescan plugins if necessary.
 
-1. Save your work and quit your audio hosts.
-2. Download `Aerium-1.1.1-macOS.pkg` from the release linked above. Compare its SHA-256 with the release's `SHA256SUMS.txt`.
-3. Open the installer. Use **Customise** to select VST3, Audio Unit, or both. At least one format is required.
-4. Complete installation, then reopen your host and scan for the selected plugin format. The plugin is named **Aerium**.
-5. Open a fresh Aerium instance. If macOS asks your audio host for Documents access, allow it so Aerium can prepare its user folders.
-6. Factory content and the manual are copied into your own `Documents/Aerium` folder on the first successful plugin launch. Existing same-name user files are preserved.
+The installer is **unsigned and unnotarised**. Its plugins are ad-hoc signed, not Developer ID signed. If macOS blocks this installer, follow the screenshots in the guide and Apple's [per-installer opening instructions](https://support.apple.com/en-us/102445) only if you trust the source and have verified the download. Do not disable Gatekeeper or override an explicit malware detection.
 
-### Unsigned and unnotarised installer
+## Your files
 
-This installer is **not Developer ID signed or notarised**. macOS may block it or warn that the developer cannot be verified. The plugin executables have ad-hoc signatures; these are not Developer ID signing or Apple notarisation.
-
-Only proceed if you trust the source and have verified the package checksum. If macOS blocks this specific installer, follow Apple's [supported Privacy & Security / Open Anyway instructions](https://support.apple.com/en-us/102445), where available. Do not disable Gatekeeper or use security-bypass scripts. Do not override a warning that explicitly identifies malware.
-
-## Installed locations
+The installer places selected formats at:
 
 ```text
 /Library/Audio/Plug-Ins/VST3/Aerium.vst3
 /Library/Audio/Plug-Ins/Components/Aerium.component
+```
+
+Shared read-only factory content is installed at:
+
+```text
 /Library/Application Support/TonePixels Studio/Aerium/Factory Resources/
 ```
 
-The selected plugin formats determine which plugin bundle is installed. Factory resources are shared; each user's editable data lives separately in Documents:
+Your editable content remains at:
 
 ```text
 ~/Documents/Aerium/
@@ -53,21 +52,25 @@ The selected plugin formats determine which plugin bundle is installed. Factory 
 └── Aerium User Manual.pdf
 ```
 
+Aerium copies missing factory content and the manual to Documents when access permits. Existing same-name custom or modified files are preserved. If Documents setup is incomplete, readable factory content remains available from Application Support. The setup notice offers **RETRY SETUP**, **COPY DETAILS** and **DISMISS**. User saves still require access to the intended Documents location; they are not silently redirected.
+
+If Documents is in iCloud Drive, use Finder's **Keep Downloaded** option where available for user IRs and profiles needed offline. Allow your host Documents access if macOS asks and you trust the host. Do not delete your Aerium folder, move plugin bundles manually or change user-folder ownership as a troubleshooting shortcut.
+
 - `.tps` stores a complete Aerium preset.
-- `.tpseq` stores an EQ correction/profile. Loading it into Acoustic Response changes the EQ, not unrelated effects.
-- Existing beta installations and their separate user data are not migrated or removed automatically.
-- The installer was updated on 21 November 2026 to correct unreadable shared factory-resource metadata that could cause “Aerium could not prepare Documents/Aerium.” If affected, close audio hosts and reinstall the current package; preserve your existing Documents/Aerium folder. The audio binaries and factory-content bytes are unchanged.
-- If folder preparation still fails after the updated installer, check free space and the host's Documents access in macOS Privacy & Security. Aerium does not silently switch to another data folder.
-- The superseded installer and checksum have been removed from the GitHub release. Use `Aerium-1.1.1-macOS.pkg` and `SHA256SUMS.txt` for the correction.
+- `.tpseq` stores an EQ profile; loading it changes EQ without changing unrelated effects.
+- Fresh instances start with Default; saved DAW projects recall their saved state.
+- Separately named beta plugins and their data are not automatically removed or migrated.
 
-## Factory presets
+## Beta feedback
 
-**Default**, **Dry Default**, **Ambient Dream** and **Martin** retain their approved settings and original IR assignments. Fresh instances start with Default; saved DAW projects recall their saved plugin state.
+Open Aerium Settings and click **REPORT A BUG** (the "Report for Error" function described in the guide). This opens an unsent email draft for you to review. Include your Mac model, macOS and DAW versions, audio interface, steps to reproduce and a screenshot where helpful.
 
-## Third-party content
+Installation help: [tonepixelsstudio@gmail.com](mailto:tonepixelsstudio@gmail.com).
 
-Bundled resources retain their own licence terms. See the included IR licence notices and attribution. Permission to use an IR in audio processing is distinct from permission to redistribute its data file; this README does not represent unresolved permissions as cleared.
+## Validation and content notices
 
-## Validation scope
+See [VALIDATION.md](VALIDATION.md) for the exact tested scope and remaining limits. Successful local installation, Ableton AU/VST3 loading/project recall, Logic AU loading, and native/Rosetta AU validation are recorded. Genuine TCC-denied and redirected-iCloud host scenarios, GarageBand and physical Intel hardware remain unverified.
 
-The build was checked using offline VST3/AU hosts on Apple Silicon natively and under Rosetta, including factory-state/audio comparisons. These checks do not replace testing in your DAW, physical Intel hardware, or every supported macOS version. For the Documents repair, fresh/repeated provisioning passed on arm64 and x86_64/Rosetta, and existing installed AU/VST3 loading was checked in Ableton. Privileged reinstallation and fresh-setup confirmation in Ableton/GarageBand on the affected Mac remain pending. No Windows installer is included in this macOS release.
+Bundled third-party resources retain their licence terms. Redistribution evidence remains unresolved for twelve IR files in the existing records; this release does not claim those permissions are cleared. The rejected synthetic IR replacements are not included.
+
+This is a distribution/documentation repository. It does not currently contain the plugin source, dependencies or a self-contained build system. This cleanup does not publish private development material or rewrite Git history.
