@@ -19,14 +19,36 @@ Please read this before installing Aerium on your Mac.
 
 3. IF macOS BLOCKS THE INSTALLER
 
-Aerium 1.1.1 is unsigned and has not been notarised by Apple. macOS may display a security warning.
+WHY AM I SEEING A SECURITY WARNING?
 
-1. Try opening the installer normally first.
-2. If macOS blocks it, open System Settings > Privacy & Security.
-3. In the Security section, select Open Anyway for the Aerium installer if that option appears.
-4. Confirm only if you trust the download source, then continue installation.
+Aerium is a free plugin developed independently. At the moment, the installer has not been digitally signed or notarised by Apple.
 
-Do not disable Gatekeeper or change system-wide security settings.
+Because of this, macOS may display a warning saying that Apple cannot verify the developer or check the installer for malicious software.
+
+This is a normal security precaution for unsigned software. It does not automatically mean Aerium is harmful, but it also does not guarantee that the software is safe.
+
+HOW TO INSTALL AERIUM
+
+1. Double-click Aerium-1.1.1-macOS.pkg.
+2. If macOS blocks the installer, click Done or Cancel to dismiss the warning.
+3. Open System Settings > Privacy & Security.
+4. Scroll down to the Security section.
+5. Look for the message about the Aerium installer and click Open Anyway.
+6. Enter your Mac password or use Touch ID if requested.
+7. Confirm that you want to open the installer.
+8. Follow the normal installation instructions.
+
+The Open Anyway option generally appears only after macOS has blocked an attempt to open the installer.
+
+IMPORTANT
+
+Only approve Aerium if you downloaded it from the official GitHub release:
+
+https://github.com/TonePixelsStudio/Aerium/releases/tag/v1.1.1
+
+You do not need to disable your Mac's security settings, switch off Gatekeeper or enter Terminal commands.
+
+Once installed, open your recording software and load Aerium as you would any other audio plugin.
 
 4. WHERE YOUR FILES GO
 
