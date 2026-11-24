@@ -12,7 +12,7 @@ Aerium is a free acoustic-guitar tone-shaping plugin with microphone IR processi
 - Approved audio processing and plugin identities retained.
 - Factory presets and IRs load from Application Support independently of optional Documents setup.
 
-[Download macOS installer](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-1.1.1-macOS.pkg) · [Read the illustrated beta installation guide](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/README-FIRST-BEFORE-INSTALLATION.pdf) · [User manual](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-User-Manual.pdf) · [Checksums](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/SHA256SUMS.txt)
+[Download Aerium 1.1.1 macOS installer](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-1.1.1-macOS.pkg) · [IMPORTANT-READ THIS BEFORE INSTALLATION](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/README-FIRST-BEFORE-INSTALLATION.pdf) · [AERIUM User manual](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-User-Manual.pdf) · [Checksums](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/SHA256SUMS.txt)
 
 ## Requirements and installation
 
