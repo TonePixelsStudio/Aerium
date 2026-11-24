@@ -44,21 +44,6 @@ Yes, Aerium is **100% free to use**.
 
 This is a personal project I've been working on, and I wanted to create something useful that I could share with fellow guitarists and the music community.
 
-## Aerium 1.1.1 Beta
-
-Aerium is currently in beta testing, with the final release planned before Christmas 2026.
-
-The plugin is already functional, but as this is still a beta, you may encounter occasional bugs or features that don't behave as expected.
-
-**What you'll need:**
-
-- A Mac running macOS 12 or later
-- Recording software such as Logic Pro, GarageBand or Ableton Live
-- An audio interface
-- An acoustic guitar with a pickup system
-
-Aerium currently supports Mac only. Sorry to my Windows friends! A Windows version is something I plan to work on in the future.
-
 ## Aerium 1.1.1 — macOS beta
 
 **Beta software for testing.** Bugs, compatibility problems or crashes may occur. Save your DAW projects regularly.
@@ -72,6 +57,19 @@ Aerium currently supports Mac only. Sorry to my Windows friends! A Windows versi
 [Download Aerium 1.1.1 macOS installer](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-1.1.1-macOS.pkg) · [IMPORTANT-READ THIS BEFORE INSTALLATION](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/README-FIRST-BEFORE-INSTALLATION.pdf) · [AERIUM User manual](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/Aerium-User-Manual.pdf) · [Checksums](https://github.com/TonePixelsStudio/Aerium/releases/download/v1.1.1/SHA256SUMS.txt)
 
 ## Requirements and installation
+
+Aerium currently supports Mac only. Sorry to my Windows friends! A Windows version is something I plan to work on in the future.
+
+Aerium is currently in beta testing, with the final release planned before Christmas 2026.
+
+The plugin is already functional, but as this is still a beta, you may encounter occasional bugs or features that don't behave as expected.
+
+**What you'll need:**
+
+- A Mac running macOS 12 or later
+- Recording software such as Logic Pro, GarageBand or Ableton Live
+- An audio interface
+- An acoustic guitar with a pickup system
 
 1. Read the illustrated guide, save your work and close your audio hosts.
 2. Download `Aerium-1.1.1-macOS.pkg` and compare its SHA-256 with `SHA256SUMS.txt`.
