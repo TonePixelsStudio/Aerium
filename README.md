@@ -1,4 +1,4 @@
-<img width="2048" height="682" alt="AERIUM Amber Neon Logo(2)" src="https://github.com/user-attachments/assets/494387c9-e3fd-4d14-9b85-d21104ec49f8" /># Aerium by TonePixels Studio
+<img width="2048" height="682" alt="AERIUM Amber Neon Logo(2)" src="https://github.com/user-attachments/assets/494387c9-e3fd-4d14-9b85-d21104ec49f8" /># 
 
 
 <img width="2044" height="1584" alt="01 Main Page Default" src="https://github.com/user-attachments/assets/1b8dce5e-69b6-402c-bbd4-9eb08ab2b7fc" />
