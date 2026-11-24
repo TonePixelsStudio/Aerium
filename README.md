@@ -15,7 +15,7 @@ Whether you're recording covers, writing your own songs or simply playing around
 
 ## What Can Aerium Do?
 
-**🎸 More Natural Acoustic Guitar Sounds**
+** More Natural Acoustic Guitar Sounds**
 
 Aerium uses microphone impulse responses (IRs) to help your guitar's pickup sound closer to a mic'ed acoustic guitar.
 
@@ -73,52 +73,3 @@ Aerium currently supports Mac only. Sorry to my Windows friends! A Windows versi
 
 The installer is **unsigned and unnotarised**. Its plugins are ad-hoc signed, not Developer ID signed. If macOS blocks this installer, follow the screenshots in the guide and Apple's [per-installer opening instructions](https://support.apple.com/en-us/102445) only if you trust the source and have verified the download. Do not disable Gatekeeper or override an explicit malware detection.
 
-## Your files
-
-The installer places selected formats at:
-
-```text
-/Library/Audio/Plug-Ins/VST3/Aerium.vst3
-/Library/Audio/Plug-Ins/Components/Aerium.component
-```
-
-Shared read-only factory content is installed at:
-
-```text
-/Library/Application Support/TonePixels Studio/Aerium/Factory Resources/
-```
-
-Your editable content remains at:
-
-```text
-~/Documents/Aerium/
-├── Microphone IRs/
-├── Factory Presets/
-├── Presets/
-├── EQ Profiles/
-├── Tone Match Profiles/
-└── Aerium User Manual.pdf
-```
-
-Aerium copies missing factory content and the manual to Documents when access permits. Existing same-name custom or modified files are preserved. If Documents setup is incomplete, readable factory content remains available from Application Support. The setup notice offers **RETRY SETUP**, **COPY DETAILS** and **DISMISS**. User saves still require access to the intended Documents location; they are not silently redirected.
-
-If Documents is in iCloud Drive, use Finder's **Keep Downloaded** option where available for user IRs and profiles needed offline. Allow your host Documents access if macOS asks and you trust the host. Do not delete your Aerium folder, move plugin bundles manually or change user-folder ownership as a troubleshooting shortcut.
-
-- `.tps` stores a complete Aerium preset.
-- `.tpseq` stores an EQ profile; loading it changes EQ without changing unrelated effects.
-- Fresh instances start with Default; saved DAW projects recall their saved state.
-- Separately named beta plugins and their data are not automatically removed or migrated.
-
-## Beta feedback
-
-Open Aerium Settings and click **REPORT A BUG** (the "Report for Error" function described in the guide). This opens an unsent email draft for you to review. Include your Mac model, macOS and DAW versions, audio interface, steps to reproduce and a screenshot where helpful.
-
-Installation help: [tonepixelsstudio@gmail.com](mailto:tonepixelsstudio@gmail.com).
-
-## Validation and content notices
-
-See [VALIDATION.md](VALIDATION.md) for the exact tested scope and remaining limits. Successful local installation, Ableton AU/VST3 loading/project recall, Logic AU loading, and native/Rosetta AU validation are recorded. Genuine TCC-denied and redirected-iCloud host scenarios, GarageBand and physical Intel hardware remain unverified.
-
-Bundled third-party resources retain their licence terms. Redistribution evidence remains unresolved for twelve IR files in the existing records; this release does not claim those permissions are cleared. The rejected synthetic IR replacements are not included.
-
-This is a distribution/documentation repository. It does not currently contain the plugin source, dependencies or a self-contained build system. This cleanup does not publish private development material or rewrite Git history.
