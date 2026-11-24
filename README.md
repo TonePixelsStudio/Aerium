@@ -7,7 +7,7 @@
 <img width="2044" height="1584" alt="05 Guitar Analysed" src="https://github.com/user-attachments/assets/425b1bb8-eceb-46be-8e4b-20092b5f398a" />
 
 
-# AERIUM
+# AERIUM 1.1.1 ( BETA )
 ### Give Your Acoustic Guitar a More Natural Sound
 
 **A completely free acoustic guitar plugin.**
